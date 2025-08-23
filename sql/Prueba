@@ -1,0 +1,44 @@
+DROP TABLE IF EXISTS Inmueble;
+CREATE TABLE Inmueble (
+	Id int,
+	Operacion varchar(10),
+	Tipo varchar(10),
+	Localidad varchar(50),
+	Zona varchar(30),
+	PrecioUSD bigint,
+	PrecioARS bigint,
+	DomicilioCalle varchar(20),
+	DomicilioAltura bigint,
+	Descripcion text,
+	Servicios varchar(30)
+);
+
+INSERT INTO Inmueble VALUES (
+1,
+'Venta',
+'Casa',
+'Rio Cuarto',
+'Centro',
+15000,
+15000000,
+'Alvear',
+1500,
+'Una casa a la venta generada meramente de prueba',
+'Agua,Luz,Gas,Cloacas'
+);
+
+INSERT INTO Inmueble VALUES (
+2,
+'Venta',
+'Depto',
+'Rio Cuarto',
+'Centro',
+40000,
+0,
+'Alvear',
+1356,
+'Amplio departamento en la zona centro de rio cuarto, ideal para estudiantes con muy buena iluminacion natural',
+'Luz,Agua,Gas Natural'
+);
+
+SELECT * FROM Inmueble;
